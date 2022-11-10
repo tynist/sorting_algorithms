@@ -5,8 +5,6 @@
  * Selection sort algorithm
  * @array: The array to sort
  * @size: The size of the array
- *
- *
  */
 void selection_sort(int *array, size_t size)
 {
