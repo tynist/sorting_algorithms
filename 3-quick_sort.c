@@ -5,7 +5,7 @@
 /**
  * partition - finds the partition for the quicksort using the Lomuto scheme
  * @array: array to sort
- * @lo: lowest index of the partition to sort
+ * @lo: lowest index of partition to sort
  * @hi: highest index of the partition to sort
  * @size: size of the array
  *
