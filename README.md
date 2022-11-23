@@ -6,7 +6,7 @@
 Background Context
 ------------------
 
-This project is meant to be done by groups of two students. Each group of two should [pair program])https://alx-intranet.hbtn.io/rltoken/gIcHRL9I7i1lw2CTAll37A) for at least the mandatory part.
+This project is meant to be done by groups of two students. Each group of two should [pair program](https://alx-intranet.hbtn.io/rltoken/gIcHRL9I7i1lw2CTAll37A) for at least the mandatory part.
 
 
 Resources
@@ -993,17 +993,19 @@ alex@/tmp/sort$
 
 
 ### 11\. Quick Sort - Hoare Partition scheme
-Write a function that sorts an array of integers in ascending order using the Quick sort algorithm
+Write a function that sorts an array of integers in ascending order using the [Quick sort](https://alx-intranet.hbtn.io/rltoken/_pBTrH0Xyo4BRmQn4CtnMg) algorithm
 
-Prototype: void quick_sort_hoare(int *array, size_t size);
-You must implement the Hoare partition scheme.
-The pivot should always be the last element of the partition being sorted.
-You’re expected to print the array after each time you swap two elements (See example below)
-Write in the file 107-O, the big O notations of the time complexity of the Quick sort algorithm, with 1 notation per line:
+-  Prototype: `void quick_sort_hoare(int *array, size_t size)`;
+-  You must implement the `Hoare` partition scheme.
+-  The pivot should always be the last element of the partition being sorted.
+-  You’re expected to print the `array` after each time you swap two elements (See example below)
 
-in the best case
-in the average case
-in the worst case
+Write in the file `107-O`, the big O notations of the time complexity of the Quick sort algorithm, with 1 notation per line:
+-  in the best case
+-  in the average case
+-  in the worst case
+
+```
 alex@/tmp/sort$ cat 107-main.c
 #include <stdio.h>
 #include <stdlib.h>
@@ -1042,8 +1044,11 @@ alex@/tmp/sort$ ./quick
 
 7, 13, 19, 48, 52, 71, 73, 86, 96, 99
 alex@/tmp/sort$
+```
+
 Another example of output:
 
+```
 alex@/tmp/sort$ ./quick_2
 87, 65, 28, 63, 93, 52, 39, 59, 27, 30, 24, 83, 69, 62, 13, 6, 88, 58, 92, 26, 42, 11, 16, 21, 75, 36, 71, 8, 45, 38
 
@@ -1085,18 +1090,20 @@ alex@/tmp/sort$ ./quick_2
 
 6, 8, 11, 13, 16, 21, 24, 26, 27, 28, 30, 36, 38, 39, 42, 45, 52, 58, 59, 62, 63, 65, 69, 71, 75, 83, 87, 88, 92, 93
 alex@/tmp/sort$ 
-Repo:
+```
 
-GitHub repository: sorting_algorithms
-File: 107-quick_sort_hoare.c, 107-O
+**Repo:**
+-  GitHub repository: `sorting_algorithms`
+-  File: `107-quick_sort_hoare.c`, `107-O`
 
-  
-## 12\. Dealer
+
+
+### 12\. Dealer
 Write a function that sorts a deck of cards.
 
-Prototype: void sort_deck(deck_node_t **deck);
-You are allowed to use the C standard library function qsort
-Please use the following data structures:
+-  Prototype: `void sort_deck(deck_node_t **deck)`;
+-  You are allowed to use the C standard library function `qsort`
+-  Please use the following data structures:
 
 ```
 typedef enum kind_e
@@ -1135,14 +1142,14 @@ typedef struct deck_node_s
 } deck_node_t;
 ```
 
-You have to push you deck.h header file, containing the previous data structures definition
-Each node of the doubly linked list contains a card that you cannot modify. You have to swap the nodes.
-You can assume there is exactly 52 elements in the doubly linked list.
-You are free to use the sorting algorithm of your choice
-The deck must be ordered:
-From Ace to King
-From Spades to Diamonds
-See example below
+-  You have to push you `deck.h` header file, containing the previous data structures definition
+-  Each node of the doubly linked list contains a card that you cannot modify. You have to swap the nodes.
+-  You can assume there is exactly `52` elements in the doubly linked list.
+-  You are free to use the sorting algorithm of your choice
+-  The deck must be ordered:
+-  From `Ace` to `King`
+   -  From Spades to Diamonds
+   -  See example below
 
 ```
 alex@/tmp/sort$ cat 1000-main.c
@@ -1220,7 +1227,6 @@ alex@/tmp/sort$ ./deck
 {Ace, D}, {2, D}, {3, D}, {4, D}, {5, D}, {6, D}, {7, D}, {8, D}, {9, D}, {10, D}, {Jack, D}, {Queen, D}, {King, D}
 alex@/tmp/sort$
 ```
-
 **Repo:**
 -  GitHub repository: `sorting_algorithms`
--  File: `1000-sort_deck.c`, deck.h`
+-  File: `1000-sort_deck.c`, `deck.h`
